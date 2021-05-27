@@ -6,7 +6,7 @@ import axios from 'axios';
 const WeatherData = () => {
 
   useEffect(() => {
-    axios.get('http://www.supremebodytone.com/weatherdata.json')
+    axios.get('weather data fetch url')
     .then((response) => response.data)
     .then((json) => {
       console.log(json.name);
@@ -16,7 +16,7 @@ const WeatherData = () => {
     })
   })
 
-  
+
   return (
 
     <Text></Text>
@@ -24,21 +24,3 @@ const WeatherData = () => {
 }
 
 export default WeatherData;
-
-
-
-
-// const [data, setData] = useState([]);
-
-  // useEffect(() => {
-  //   fetch('https://api.openweathermap.org/data/2.5/weather?q=Toronto&appid=21be3ea8e9d8ca3f7e73b968012bf745')
-  // .then((res) => res.json())
-  // .then((json) => {
-  //   setData(json.weather);
-  //   console.log(json.weather)
-  // })
-  // .catch((error) => {
-  //   console.error(error);
-  // });
-
-  // }, []);
